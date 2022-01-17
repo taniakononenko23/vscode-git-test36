@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        div{
+            margin: 16px;
+        }
+        .tooltip{
+            background-color: grey;
+            color: white;
+            border-radius: 4px;
+            padding: 8px;
+            margin-bottom: -40px;
+            display: none;
+        }
+        .text:hover .tooltip{
+            display: block;
+        }
+        .text{
+            text-decoration: underline 1px dotted black;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="text">
+      Hover over me
+      <span class="tooltip">I'm a tooltip</span>
+    </div>
+  </body>
+</html>
